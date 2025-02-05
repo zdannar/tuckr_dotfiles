@@ -1,18 +1,5 @@
 theme = "adwaita-dark"
 
-[editor]
-lsp.display-inlay-hints = true
-auto-format = true
-bufferline = "always"
-
-# Minimum severity to show a diagnostic after the end of a line:
-#end-of-line-diagnostics = "hint"
-
-[editor.inline-diagnostics]
-# Minimum severity to show a diagnostic on the primary cursor's line.
-# Note that `cursor-line` diagnostics are hidden in insert mode.
-#cursor-line = "error"
-
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
 A-x = "extend_to_line_bounds"
@@ -21,3 +8,26 @@ X = ["extend_line_up", "extend_to_line_bounds"]
 [keys.select]
 A-x = "extend_to_line_bounds"
 X = ["extend_line_up", "extend_to_line_bounds"]
+
+[editor]
+lsp.display-inlay-hints = true
+auto-format = true
+bufferline = "always"
+text-width = 160
+end-of-line-diagnostics = "hint"
+
+[editor.inline-diagnostics]
+# Minimum severity to show a diagnostic on the primary cursor's line.
+# Note that `cursor-line` diagnostics are hidden in insert mode.
+cursor-line = "error"
+# Minimum severity to show a diagnostic on other lines:
+# other-lines = "error"
+
+[editor.indent-guides]
+character = "╎"
+render = false
+
+
+[editor.soft-wrap]
+enable = true
+wrap-at-text-width = true
