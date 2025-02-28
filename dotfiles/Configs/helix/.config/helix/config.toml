@@ -13,7 +13,7 @@ X = ["extend_line_up", "extend_to_line_bounds"]
 lsp.display-inlay-hints = true
 auto-format = true
 bufferline = "always"
-text-width = 160
+text-width = 80
 end-of-line-diagnostics = "hint"
 
 [editor.inline-diagnostics]

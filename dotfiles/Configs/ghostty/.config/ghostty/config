@@ -26,3 +26,8 @@ keybind = cmd+s>l=next_tab
 # keybind = cmd+shit+L=move_tab:right
 
 copy-on-select = "clipboard"
+
+keybind = cmd+s>grave_accent=toggle_quick_terminal
+
+
+
