@@ -25,18 +25,36 @@ name = "rust"
 formatter = { command = "rustfmt --edition 2021" }
 
 
+# [[language]]
+# name = "elixir"
+# scope = "source.elixir"
+# file-types = ["ex", "exs"]
+# auto-format = true
+# diagnostic-severity = "hint"
+# comment-token = "#"
+# indent = {tab-width = 2, unit = " "}
+# injection-regex = "(elixir|ex)"
+# shebangs = ["elixir"]
+# roots = ["mix.exs", "mix.lock"]
+# language-servers = [ "elixir-ls" ]
+
+
+[language-server.lexical]
+command = "/Users/zackdannar/bin/lexical/bin/start_lexical.sh"
+
 [[language]]
 name = "elixir"
-scope = "source.elixir"
+language-servers = ["lexical"]
 file-types = ["ex", "exs"]
 auto-format = true
 diagnostic-severity = "hint"
-comment-token = "#"
-indent = {tab-width = 2, unit = " "}
-injection-regex = "(elixir|ex)"
-shebangs = ["elixir"]
-roots = ["mix.exs", "mix.lock"]
-language-servers = [ "elixir-ls" ]
+
+
+[[language]]
+name = "heex"
+language-servers = ["lexical"]
+
+
 
 [[language]]
 name = "yaml"
